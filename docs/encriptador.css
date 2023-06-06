@@ -6,14 +6,30 @@ body {
     background: #F3F5FC;
 }
 
+.container{
+    display: block;
+  
+}
+
+.logoDiv{
+    display: flex;
+   
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px; 
+
+    width: 100%;
+    height: 20%;
+    left: 40px;
+    top: 40px;
+}
+
 .logo {
     /* Logo */
-    
-
     /* Auto layout */
 
     display: flex;
-    flex-direction: column;
+
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
@@ -25,9 +41,48 @@ body {
     top: 40px;
 }
 
+.textareaDiv {
+    display: flex;
+
+    height: 500px;     
+    width: 300px;
+}
+.textarea {     
+    display: flex;
+
+    height: 500px;     
+    width: 300px;     
+    overflow: hidden;     
+    resize: both;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+
+    min-height: 40px;  
+    max-width: 600px;
+    max-height: 500px;   
+                              
+    color: black;
+    margin-top: 190px;
+}
+
+.textarea[contenteditable]:empty::before {    
+     content: "Ingrese el texto aqui...";    
+     color: black;
+     opacity: 35%; 
+    }
+
+.muñecoDiv {
+    display: flex;
+
+    height: 500px;     
+    width: 50%; 
+}
 .muñeco {
     /* Muñeco */
-    position: absolute;
+    position: flex;
+
     width: 336px;
     height: 304px;
     left: 1032px;

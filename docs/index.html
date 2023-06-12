@@ -2,27 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="encriptador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
     <header>
-        
+        <img class="logo" src="img/Logo.svg" alt="logo de alura">
     </header>
     <main>
-        <div class="container">
-            <div class="logoDiv">
-                <img class="logo" src="img/Logo.svg">
-            </div>
-          <div class="textareaDiv">
-            <textarea id ="text" class="textarea" role="textbox" contenteditable=></textarea>
-          </div>
+      <section>
+        <textarea class="textArea1" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <div>
+          <h6 class="infoExtra">Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar">Encriptar</button>
+          <button class="btn-desencriptar">Desencriptar</button>
+        </div>
+      </section>
+      <section>
+        <textarea class="textArea2" id="" cols="20" rows="10"></textarea>
+        <div>
+          <button class="btn-copiar">Copiar</button>
+        </div>
+      </section>
           <div class="muñecoDiv">
             <img class="muñeco" src="img/Muñeco.svg">
-          </div>
-        </div>
-        
+          </div>   
     </main>
 </body>
 </html>

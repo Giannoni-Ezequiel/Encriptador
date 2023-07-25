@@ -6,7 +6,7 @@
     line-height: 150%;
 }
 
-.container{
+/* .container{
     display: block;
   
 }
@@ -22,7 +22,7 @@
     height: 20%;
     left: 40px;
     top: 40px;
-}
+} */
 
 .logo {
     /* Logo */
@@ -42,12 +42,12 @@
     top: 40px;
 }
 
-.textareaDiv {
+/* .textareaDiv {
     display: flex;
 
     height: 500px;     
     width: 300px;
-}
+} */
 .textArea1 {     
     border:none;
     height: 500px;     
@@ -66,7 +66,6 @@
     color: #0A3871;
     margin-top: 90px;
 }
-
 ::placeholder { color: #0A3871; }
 .textArea1:focus { 
     outline: none;
@@ -82,7 +81,7 @@
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+
 }
 .textArea2:focus {
     outline: none;
@@ -100,17 +99,16 @@
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 38px;
+    margin-left: 30px;
     width: 328px;
 }
 .btn-encriptar {
-    background: #0A3871;
+    background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: rgb(252, 249, 249);
     cursor: pointer;
     height: 67px;
-    margin-left: 38px;
     width: 328px;
 }
 .btn-copiar {
@@ -120,35 +118,184 @@
     cursor: pointer;
     height: 67px;
     margin-left: 100px;
-    margin-top: 402px;
+    margin-top: 102px;
     position: absolute;
     width: 336px;
 }
+.alerta{
+    display: flex;
+}
+.infoExtra{
+    color: #495057;
+    font-size: 18px;
+    margin-left: 10px;
+}
 
-.textarea[contenteditable]:empty::before {    
+.textArea1[contenteditable]:empty::before {    
      content: "Ingrese el texto aqui...";    
      color: black;
      opacity: 35%; 
     }
 
-.muñecoDiv {
+/* .muñecoDiv {
     display: flex;
 
     height: 500px;     
     width: 50%; 
 }
 .muñeco {
-    /* Muñeco */
+    // Muñeco 
     position: flex;
 
     width: 336px;
     height: 304px;
     left: 1032px;
     top: 283px;
-}
+} */
 
 main {
     display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
 }
+
+@media (20em <= width <= 30em) {
+    /* Móviles: entre 320 y 480 píxeles. */
+    .logo{
+        height: 38px;
+        left: 5px;
+        top: 30px;
+    }
+    .textArea1{
+        height: 100px;     
+        width: 300px;
+        font-size: 20px;     
+    }
+    .textArea2{
+        height: 100px;     
+        width: 270px;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-top: 20px;
+        padding-left: 0px;  
+    }
+    main{
+        display: block;
+    }
+    .btn-desencriptar{
+        height: 57px;
+        margin-left: 30px;
+        width: 128px;
+        font-size: 20px;
+    }
+    .btn-encriptar{
+        height: 57px;
+        width: 128px;
+        font-size: 20px;
+    }
+    .btn-copiar{
+        border-radius: 24px;
+        height: 57px;
+        margin-top: 130px;
+        margin-left: 70px;
+        width: 128px;
+        font-size: 20px;
+    }
+    .infoExtra{
+        font-size: 10px;
+    }
+  }
+
+@media (48em <= width <= 64em) {
+    /* Tablets: entre 768 y 1024 píxeles. */
+    .logo{
+        height: 38px;
+        left: 5px;
+        top: 30px;
+    }
+    .textArea1{
+        height: 400px;     
+        width: 400px;     
+
+        font-weight: 300px;
+        font-size: 22px;
+        line-height: 100%;
+
+        min-height: 40px;  
+        max-width: 500px;
+        max-height: 400px;   
+                                
+        margin-top: 90px;
+    }
+    .textArea2{
+        margin-left: 98px;
+        margin-top: 80px;
+        margin-right: 200px;
+        width: 300px;
+        height: 410px;
+    }
+    .btn-desencriptar{
+        height: 57px;
+        margin-left: 30px;
+        width: 228px;
+    }
+    .btn-encriptar{
+        height: 57px;
+        width: 228px;
+    }
+    .btn-copiar{
+        border-radius: 24px;
+        height: 57px;
+        margin-left: center;
+        margin-top: 618px;
+        width: 236px;
+    }
+    .infoExtra{}
+  }
+
+@media (width >= 75em) {
+    /* Pantallas grandes: más de 1200 píxeles */
+    .logo{
+        height: 38px;
+        left: 5px;
+        top: 30px;
+    }
+    .textArea1{
+        height: 400px;     
+        width: 400px;     
+
+        font-weight: 300px;
+        font-size: 22px;
+        line-height: 100%;
+
+        min-height: 40px;  
+        max-width: 500px;
+        max-height: 400px;   
+                                
+        margin-top: 90px;
+    }
+    .textArea2{
+        margin-left: 98px;
+        margin-top: 80px;
+        margin-right: 200px;
+        width: 300px;
+        height: 410px;
+    }
+    .btn-desencriptar{
+        height: 57px;
+        margin-left: 30px;
+        width: 228px;
+    }
+    .btn-encriptar{
+        height: 57px;
+        width: 228px;
+    }
+    .btn-copiar{
+        border-radius: 24px;
+        height: 57px;
+        margin-left: center;
+        margin-top: 110px;
+        width: 236px;
+    }
+    .infoExtra{}
+  }

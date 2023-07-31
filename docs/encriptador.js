@@ -40,12 +40,7 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 
-function copiar(mensaje){
-
+function btnCopiar(){
+    textArea.value = mensaje.value;
 }
 
-const btnCopiar = document.querySelector(".btn-copiar");
-    btnCopiar.addEventListener("click", copiar = () => {
-        var contenido = document.querySelector(".textArea2").textContent;
-        navigator.clipboard.writeText(contenido);
-    })

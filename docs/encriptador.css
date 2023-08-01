@@ -247,10 +247,10 @@ main {
         border-radius: 24px;
         height: 57px;
         margin-left: center;
-        margin-top: 618px;
+        margin-top: 218px;
         width: 236px;
     }
-    .infoExtra{}
+    
   }
 
 @media (width >= 75em) {
@@ -297,5 +297,5 @@ main {
         margin-top: 110px;
         width: 236px;
     }
-    .infoExtra{}
+    
   }
